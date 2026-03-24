@@ -1,48 +1,49 @@
 # New CollegeSite 🎓
 
-A modern, high-performance website for the RITE College built using Next.js and React. The project features incredible animations, beautiful glassmorphism designs, and a fully responsive layout to provide a premium user experience for students and faculty.
+A next-generation, high-performance website for the Radhakrishna Institute of Technology and Engineering (RITE). Built with Next.js 16 and heavily focused on dynamic animations and premium frontend user experience.
 
-## 🚀 Features
-- **Stunning UI/UX:** Advanced layouts powered by Tailwind CSS.
-- **Smooth Animations:** Framer Motion and custom CSS animations for marquee tickers, floating particles, and fade-ins.
-- **Comprehensive Sections:** Includes Hero, About, News, Placements, Testimonials, Facilities, and Programs.
-- **Interactive Elements:** Scroll progress indicators, dynamic counters, and active navigation highlighting.
-- **SEO Optimized:** Server-Side Rendering (SSR) via Next.js for maximum performance and discoverability.
+## 🚀 Key Features
+- **Modern App Router:** Uses the Next.js App Router paradigm for seamless SSR, routing, and highly optimized page loads.
+- **Advanced Animations:** Implements both Framer Motion and GSAP to deliver a visually stunning, smooth, and interactive experience (includes components like `FadeIn`, `FloatingParticles`, and `WaveDivider`).
+- **Interactive UI Components:**
+  - `MarqueeTicker` for continuous announcements.
+  - Interactive `EmblaCarousel` for testinomials and galleries.
+  - Dynamic `ScrollProgress` indicators.
+  - Animated `Counter` components for rendering statistics dynamically on intersection.
+- **Comprehensive Page Sections:** Includes Hero, About, Announcements, CTABanner, Facilities, MarqueeTicker, News, Placements, PrincipalMessage, Programs, Rankings, Testimonials, and WhyChooseUs.
+- **Iconography:** Utilizes `lucide-react` for clean, scalable vector icons.
 
 ## 💻 Tech Stack
-- **Framework:** Next.js (React)
-- **Styling:** Tailwind CSS
-- **Animations:** Framer Motion (assumed) / CSS keyframes
+- **Framework:** Next.js 16 (React 19)
 - **Language:** TypeScript
+- **Styling:** Tailwind CSS v4, `clsx`, `tailwind-merge`
+- **Animations:** Framer Motion, GSAP
+- **Utilities:** `react-intersection-observer`, Embla Carousel
+
+## 📁 Project Structure
+- `rite-website/src/app/`: The Next.js application core containing `page.tsx`, `layout.tsx`, and global stylesheets.
+- `rite-website/src/components/animations/`: Isolated animation wrappers (`FadeIn.tsx`, `FloatingParticles.tsx`, etc.).
+- `rite-website/src/components/home/`: Specific UI blocks making up the homepage.
+- `rite-website/src/components/ui/`: Generic reusable UI elements (e.g., `Counter.tsx`).
 
 ## 🛠️ Installation & Setup
 
-### Prerequisites
-- Node.js (v16.x or later)
-- npm or yarn
-
-### Setup Steps
-1. Open up your terminal and navigate to the main application directory:
+1. Navigate to the core application directory:
    ```bash
    cd rite-website
    ```
-2. Install the necessary dependencies:
+2. Install the modern dependencies:
    ```bash
    npm install
    ```
-3. Run the development server:
+3. Run the development environment:
    ```bash
    npm run dev
    ```
-   *The website will be accessible at http://localhost:3000*
+   *The platform is accessible locally at http://localhost:3000.*
 
-4. To create a production build, run:
+4. To bundle for production:
    ```bash
    npm run build
-   npm start
+   npm run start
    ```
-
-## 📁 Key Directories
-- `src/components/`: Reusable UI components and specific page sections (Home, Layout, UI, Animations).
-- `src/app/`: Next.js App Router layout and pages.
-- `public/`: Static assets such as images and branding vectors.
